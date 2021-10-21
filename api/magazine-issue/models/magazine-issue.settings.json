@@ -1,0 +1,36 @@
+{
+  "kind": "collectionType",
+  "collectionName": "magazine_issues",
+  "info": {
+    "name": "magazine issue",
+    "description": ""
+  },
+  "options": {
+    "increments": true,
+    "timestamps": true,
+    "draftAndPublish": false
+  },
+  "attributes": {
+    "title": {
+      "type": "string"
+    },
+    "content": {
+      "type": "richtext"
+    },
+    "pdf": {
+      "model": "file",
+      "via": "related",
+      "allowedTypes": [
+        "images",
+        "files",
+        "videos"
+      ],
+      "plugin": "upload",
+      "required": false
+    },
+    "articles": {
+      "collection": "article",
+      "via": "magazine"
+    }
+  }
+}

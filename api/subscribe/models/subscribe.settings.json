@@ -1,0 +1,18 @@
+{
+  "kind": "singleType",
+  "collectionName": "subscribes",
+  "info": {
+    "name": "Subscribe",
+    "description": ""
+  },
+  "options": {
+    "increments": true,
+    "timestamps": true,
+    "draftAndPublish": false
+  },
+  "attributes": {
+    "markdown": {
+      "type": "richtext"
+    }
+  }
+}

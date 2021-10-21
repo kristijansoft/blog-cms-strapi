@@ -1,0 +1,17 @@
+{
+  "kind": "singleType",
+  "collectionName": "staff_listings",
+  "info": {
+    "name": "Staff Listing"
+  },
+  "options": {
+    "increments": true,
+    "timestamps": true,
+    "draftAndPublish": false
+  },
+  "attributes": {
+    "markdown": {
+      "type": "richtext"
+    }
+  }
+}
